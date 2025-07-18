@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aqua Fresh Epic 15L Ro Purifier</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* ছোট ছবি গুলো সাজানোর জন্য CSS */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .gallery img:hover {
+      border-color: #007bff;
+    }
+
+    /* বড় প্রধান ছবি */
+    .main-image {
+      display: block;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html">← Back to Home</a>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <!-- প্রধান বড় ছবি -->
+    <img id="mainImage" src="../images/product3_1.jpg" alt="Main Product Image" class="main-image" />
+  </div>
+
+  <!-- ছবি গ্যালারি -->
+  <div class="gallery">
+    <img src="../images/product3_1.jpg" alt="Image 1" onclick="changeImage(this.src)" />
+    <img src="../images/product3_2.jpg" alt="Image 2" onclick="changeImage(this.src)" />
+    <img src="../images/product3_3.jpg" alt="Image 3" onclick="changeImage(this.src)" />
+	<img src="../images/product3_4.jpg" alt="Image 3" onclick="changeImage(this.src)" />
+  </div>
+
+  <h1>Aqua Fresh Epic 15L Ro Purifier</h1>
+  <h2>Price: ₹12990</h2>
+  <p>
+    Drink clean and healthy water every day with the Aquafresh RO 15 L Aquafresh Epic Water Purifier. It uses RO +UV technology to purify water and uses a TDS minimiser method to reduce the amount of TDS. Also, this water purifier is equipped with an antibacterial three-in-one Silver Doser, Taste Conditioner, and activated carbon to improve the taste and shelf life of water. Moreover, its UV failure indicator lets you know when the water consists of impurities due to UV failure.
+  </p>
+
+  <a
+    href="https://wa.me/918016609058?text=I'm%20interested%20in%20AquaFreshEpic%20Water%20Purifier"
+    target="_blank"
+    style="
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    "
+  >
+    WhatsApp Now
+  </a>
+
+  <script>
+    // JavaScript function to change main image on thumbnail click
+    function changeImage(src) {
+      document.getElementById("mainImage").src = src;
+    }
+  </script>
+</body>
+</html>

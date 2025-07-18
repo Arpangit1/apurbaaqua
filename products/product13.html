@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Propello Queen+ Kitchen Chimney</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* ছোট ছবি গুলো সাজানোর জন্য CSS */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .gallery img:hover {
+      border-color: #007bff;
+    }
+
+    /* বড় প্রধান ছবি */
+    .main-image {
+      display: block;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html">← Back to Home</a>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <!-- প্রধান বড় ছবি -->
+    <img id="mainImage" src="../images/product13.jpg" alt="Main Product Image" class="main-image" />
+  </div>
+
+  <h1>Propello Queen+ Kitchen Chimney</h1>
+  <h2>Price: ₹16990</h2>
+  <p>
+   Propello Queen+ Kitchen Chimney
+  </p>
+
+  <a
+    href="https://wa.me/918016609058?text=I'm%20interested%20in%20Queen+%20chimney"
+    target="_blank"
+    style="
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    "
+  >
+    WhatsApp Now
+  </a>
+
+  <script>
+    // JavaScript function to change main image on thumbnail click
+    function changeImage(src) {
+      document.getElementById("mainImage").src = src;
+    }
+  </script>
+</body>
+</html>

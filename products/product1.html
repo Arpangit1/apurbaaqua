@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Propello Karvy Water purifier</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* ছোট ছবি গুলো সাজানোর জন্য CSS */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .gallery img:hover {
+      border-color: #007bff;
+    }
+
+    /* বড় প্রধান ছবি */
+    .main-image {
+      display: block;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html">← Back to Home</a>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <!-- প্রধান বড় ছবি -->
+    <img id="mainImage" src="../images/product1_1.jpg" alt="Main Product Image" class="main-image" />
+  </div>
+
+  <!-- ছবি গ্যালারি -->
+  <div class="gallery">
+    <img src="../images/product1_1.jpg" alt="Image 1" onclick="changeImage(this.src)" />
+    <img src="../images/product1_2.jpg" alt="Image 2" onclick="changeImage(this.src)" />
+    <img src="../images/product1_3.jpg" alt="Image 3" onclick="changeImage(this.src)" />
+  </div>
+
+  <h1>Propello Karvy Water purifier</h1>
+  <h2>Price: ₹17990</h2>
+  <p>
+    
+PURIFYING TECHNOLOGY
+Reverse osmosis technology
+
+
+APPLICABLE TDS RANGE OF INPUT WATER
+Upto 1500 mg/lt
+
+
+INSTALLATION TYPE
+Table-top and wall-mounting
+
+
+PURIFIED WATER FLOW RATE
+8 liters/hour
+
+
+STORAGE TANK CAPACITY
+8 liters (approx.)
+
+
+TDS REDUCTION
+90% (approx.)
+
+
+% OF WATER RECOVERY
+27 % (approx.)
+
+
+NET WEIGHT
+12 kg (approx.)
+
+
+OPERATING INPUT
+Voltage 230v ac/50 hz
+
+
+RO MEMBRANE
+75 gpd
+
+
+MEMBRANE TYPE
+Thin film composite RO
+
+
+BOOSTER PUMP VOLTAGE
+24v dc
+
+
+INPUT WATER TEMPERATURE
+5 degree c - 45 degree c
+
+
+INPUT WATER CHLORINE
+0.2 mg/lt max
+
+
+INPUT WATER IRON
+0.3 mg/lt max
+
+
+INPUT WATER TURBIDITY
+15 ntu max
+
+
+UF CARTRIDGE
+Hf capillary uf membrane with 0.01 porosity
+
+
+TDS CONTROLLER
+Fine precission control valve ensure the desired mixing of natural mineral water
+  </p>
+
+  <a
+    href="https://wa.me/918016609058?text=I'm%20interested%20in%20Karvy%20Water%20Purifier"
+    target="_blank"
+    style="
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    "
+  >
+    WhatsApp Now
+  </a>
+
+  <script>
+    // JavaScript function to change main image on thumbnail click
+    function changeImage(src) {
+      document.getElementById("mainImage").src = src;
+    }
+  </script>
+</body>
+</html>
